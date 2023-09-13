@@ -160,6 +160,43 @@ header {
   box-shadow: 2px 2px 30px #6e7361;
 }
 
+/* --- Content Part Two --- */
+.content-horizontal-all {
+  height: 100vh;
+  width: 100%;
+  background: #b0c8bc;
+}
+
+.content-horizontal {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.content-horizontal-card {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 100px;
+  justify-content: space-evenly;
+  margin: 200px 100px;
+}
+
+.content-horizontal-title {
+  text-align: center;
+}
+
+.content-horizontal-image {
+  position: block;
+  margin: 0 auto;
+  width: 30em;
+}
+
+.content-horizontal-text {
+  white-space: wrap;
+}
+
 @media (max-width: 800px) {
   /* --- Header --- */
 
