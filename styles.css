@@ -24,6 +24,9 @@ img {
 }
 
 /* --- Header --- */
+.container-body {
+  width: 100%;
+}
 
 .nav-menu {
   display: flex;
@@ -52,12 +55,11 @@ img {
 header {
   background: url("images/background-header.jpg");
   background-size: cover;
-  height: 50em;
+  height: 110vh;
 }
 
 .menu-container {
   margin: 40px 0px 30px 70px;
-  width: 100%;
 }
 
 .menu-container-text {
@@ -70,18 +72,22 @@ header {
   margin-bottom: 20px;
 }
 
-.header-text {
+.header-title-extended,
+.header-text-sumary {
   text-align: justify;
   line-height: 3;
   font-size: 1.1em;
   margin-bottom: 40px;
 }
 
+.header-text-sumary {
+  display: none;
+}
+
 .header-button {
   border: 3px solid #fff;
   background: #ffffff00;
   color: #fff;
-  margin: 0px 70px;
   padding: 15px 30px;
   font-size: 1.1em;
 }
@@ -90,18 +96,19 @@ header {
   transform: scale(0.95);
 }
 
-/* --- Content --- */
+/* --- Content Part One --- */
+
 .container-contents {
-  height: 1000px;
+  height: 100vh;
   width: 100%;
   overflow: scroll;
+  background: url("images/wave-haikei.png");
+  background-size: cover;
 }
 
 .container-content {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  display: flex;
+  justify-content: space-evenly;
   margin: 130px 60px;
 }
 
@@ -110,29 +117,114 @@ header {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 40%;
+  height: 600px;
+  min-width: 30%;
   background-color: #d4dbc3;
   border-radius: 10px;
-  padding: 20px 25px 20px 30px;
+  padding: 200px 50px 30px 50px;
   box-shadow: 2px 2px 30px #6e7361;
+  overflow: auto;
 }
 
 .containter-content-text-title {
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin-bottom: 30px;
 }
 
 .containter-content-text-paragraph {
   line-height: 2.7;
   font-size: 1.1em;
+  text-align: justify;
 }
 
 .container-content-image {
-  width: 80%;
-  height: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 2px 2px 15px #6e7361;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
+
+.container-content-image img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px #6e7361;
+}
+
+@media (max-width: 800px) {
+  /* --- Header --- */
+
+  .nav-menu-items {
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 15px 30px;
+    font-size: 0.9em;
+    margin: 0px 5px;
+  }
+
+  .nav-menu-items:hover {
+    transform: scale(0.95);
+  }
+
+  header {
+    background: url("images/background-header.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .header-title-extended {
+    display: none;
+  }
+
+  .header-text-sumary {
+    display: inline;
+  }
+
+  /* --- Content Part One --- */
+
+  .container-contents {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    background: url("images/wave-haikei.png");
+    background-size: cover;
+  }
+
+  .container-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 8px;
+    margin: 130px 60px;
+  }
+
+  .containter-content-text {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d4dbc3;
+    border-radius: 10px;
+    padding: 20px 25px 20px 30px;
+    box-shadow: 2px 2px 30px #6e7361;
+  }
+
+  .containter-content-text-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+
+  .containter-content-text-paragraph {
+    line-height: 2.7;
+    font-size: 1.1em;
+  }
+
+  .container-content-image {
+    display: none;
+  }
+}
+/* --- Content Part Two --- */
