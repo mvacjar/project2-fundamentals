@@ -486,24 +486,4 @@ footer {
     gap: 3%;
     margin-left: 30px;
   }
-
-  /*.footer-content {
-    gap: 20px;
-  }
-
-  .footer-information,
-  .footer-menu {
-    margin-top: 100px;
-  }
-
-  .footer-information {
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  .footer-menu-list {
-    grid-template-rows: 6fr;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2%;
-  }*/
 }
