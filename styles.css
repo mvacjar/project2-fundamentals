@@ -221,11 +221,11 @@ header {
 .content-horizontal-text {
   white-space: wrap;
   max-width: 80%;
-  height: auto;
+  min-height: 200px;
   overflow: scroll;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 0px;
+  padding: 40px 0px 30px 0;
   text-align: justify;
   line-height: 2;
   font-weight: 500;
