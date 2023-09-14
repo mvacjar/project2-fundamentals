@@ -187,8 +187,9 @@ header {
 .content-horizontal-card {
   width: 30%;
   min-width: 30%;
-  height: 30%;
-  min-height: 30%;
+  height: auto;
+  min-height: auto;
+  padding: 30px;
   background-color: #fff;
   border-radius: 30px;
   display: inline-block;
