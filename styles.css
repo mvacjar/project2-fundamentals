@@ -187,12 +187,13 @@ header {
 .content-horizontal-card {
   width: 30%;
   min-width: 30%;
-  height: 40%;
+  height: 30%;
+  min-height: 30%;
   background-color: #fff;
   border-radius: 30px;
   display: inline-block;
   justify-content: space-evenly;
-  margin: 160px 100px;
+  margin: 140px 100px;
   box-shadow: 8px 8px 15px #6e7361;
 }
 
@@ -226,9 +227,9 @@ header {
   margin-right: auto;
   padding: 40px 0px;
   text-align: justify;
-  line-height: 3;
+  line-height: 2;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* --- Footer --- */
