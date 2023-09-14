@@ -139,8 +139,11 @@ header {
 
 .containter-content-text-title {
   font-size: 2.2em;
-  margin: 30px 0;
   overflow: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0 30px 0;
   text-align: center;
 }
 
@@ -205,8 +208,7 @@ header {
 .content-horizontal-title {
   text-align: center;
   margin: 30px 0px;
-  font-weight: 600;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 .content-horizontal-image {
@@ -428,7 +430,6 @@ footer {
 
   .containter-content-text-title {
     font-size: 1.5em;
-    margin-top: 200px;
     margin-bottom: 15px;
     text-align: center;
   }
