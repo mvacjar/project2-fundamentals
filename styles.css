@@ -182,6 +182,7 @@ header {
 .content-horizontal {
   overflow: auto;
   white-space: nowrap;
+  min-height: 100vh;
 }
 
 .content-horizontal-card {
