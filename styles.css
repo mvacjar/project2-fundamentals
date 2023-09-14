@@ -42,7 +42,7 @@ button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
   position: fixed;
   z-index: 1;
 }
@@ -139,13 +139,16 @@ header {
 
 .containter-content-text-title {
   font-size: 2.2em;
-  margin-bottom: 30px;
+  margin: 30px 0;
+  overflow: none;
+  text-align: center;
 }
 
 .containter-content-text-paragraph {
   line-height: 2.7;
   font-size: 1.1em;
   text-align: justify;
+  overflow: auto;
 }
 
 .container-content-image {
@@ -158,6 +161,11 @@ header {
   border-radius: 10px;
 }
 
+.container-content-image:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
 .container-content-image img {
   border-radius: 10px;
   box-shadow: 2px 2px 30px #6e7361;
@@ -166,7 +174,7 @@ header {
 /* --- Content Part Two --- */
 
 .content-horizontal-all {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: #b0c8bc;
 }
@@ -177,13 +185,15 @@ header {
 }
 
 .content-horizontal-card {
-  width: 40%;
-  height: 60em;
+  width: 30%;
+  min-width: 30%;
+  height: 40%;
   background-color: #fff;
   border-radius: 30px;
   display: inline-block;
   justify-content: space-evenly;
   margin: 160px 100px;
+  box-shadow: 8px 8px 15px #6e7361;
 }
 
 .content-horizontal-card:hover {
@@ -201,14 +211,17 @@ header {
 .content-horizontal-image {
   position: block;
   margin: 0 auto;
-  max-width: 30em;
-  min-width: 100px;
+  max-width: 80%;
+  height: auto;
   border-radius: 20px;
+  box-shadow: 1px 4px 15px #6e7361;
 }
 
 .content-horizontal-text {
   white-space: wrap;
-  width: 30em;
+  max-width: 80%;
+  height: 400px;
+  overflow: scroll;
   margin-left: auto;
   margin-right: auto;
   padding: 40px 0px;
