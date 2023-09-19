@@ -197,7 +197,7 @@ header {
   display: inline-block;
   justify-content: space-evenly;
   margin: 140px 100px;
-  box-shadow: 8px 8px 15px #6e7361;
+  box-shadow: 8px 8px 50px #6e7361;
 }
 
 .content-horizontal-card:hover {
