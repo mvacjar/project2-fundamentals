@@ -61,7 +61,7 @@ button {
 }
 
 header {
-  background: url("images/background-header.jpg");
+  background: url("src/images/background-header.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -111,7 +111,7 @@ header {
 .container-contents {
   height: 100vh;
   width: 100%;
-  background: url("images/scene-haikei.png");
+  background: url("src/images/scene-haikei.png");
   background-size: cover;
   overflow: scroll;
 }
@@ -315,7 +315,7 @@ footer {
   .container-contents {
     height: 100vh;
     width: 100%;
-    background: url("images/wave-haikei.png");
+    background: url("src/images/wave-haikei.png");
     background-size: cover;
   }
 
