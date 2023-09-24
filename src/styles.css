@@ -61,7 +61,7 @@ button {
 }
 
 header {
-  background: url("src/images/background-header.jpg");
+  background-image: url("src/images/background-header.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -315,11 +315,6 @@ footer {
   .container-contents {
     height: 100vh;
     width: 100%;
-<<<<<<< HEAD
-    background: url("images/scene-haikei.png");
-=======
-    background: url("src/images/wave-haikei.png");
->>>>>>> parent of a36060c (Change the folder place and its access links)
     background-size: cover;
   }
 
